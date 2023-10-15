@@ -10,7 +10,7 @@
       
       <TarefaUser v-for="(tarefa,index) in tarefas" :key="index" :tarefa="tarefa"/>
       <BoxUser v-if="listaEstaVazia">
-        Você não está muito produtivo hoje :(
+        Você ainda não plantou nada hoje :(
       </BoxUser>
     </div>
   </div>

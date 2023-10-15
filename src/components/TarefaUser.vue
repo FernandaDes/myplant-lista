@@ -4,7 +4,7 @@ import BoxUser from './BoxUser.vue';
   <BoxUser>
     <div class="columns">
       <div class="column is-7">
-       {{ tarefa.descricao || 'Tarefa sem descrição'}}
+       {{ tarefa.descricao || 'Planta sem descrição'}}
       </div>
     <div class="column">
       <CronometroPlanta :tempoEmSegundos="tarefa.duracaoEmSegundos" />
