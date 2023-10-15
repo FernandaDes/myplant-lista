@@ -24,7 +24,21 @@ import BoxUser from './components/BoxUser.vue';
 import FormularioUsuario from './components/FormularioUsuario.vue';
 import TarefaUser from './components/TarefaUser.vue';
 import IntTarefas from './interfaces/IntTarefa'
+import Module from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { myPlantCOnfigService } from './config/db.myplant';
 
+@Module({
+  imports:[
+    ConfigModule.forRoot({
+      isGlobal: true
+    }),
+    TypeOrmModule.forRootAsync({
+      useClass: myPlantCOnfigService,
+      inject: [myPlantCOnfigService]
+    })
+  ]
+})
 
 export default defineComponent({
   name: 'App',

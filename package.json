@@ -8,7 +8,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "@nestjs/common": "^10.2.7",
+    "@nestjs/config": "^3.1.1",
+    "@nestjs/typeorm": "^10.0.0",
     "core-js": "^3.8.3",
+    "pg": "^8.11.3",
+    "typeorm": "^0.3.17",
     "vue": "^3.2.13"
   },
   "devDependencies": {
