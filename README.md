@@ -1,4 +1,4 @@
-# alura-tracker
+# myplant-lista
 
 ## Project setup
 ```
